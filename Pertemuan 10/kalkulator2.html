@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: goldenrod;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #fff;
+        }
+        .container {
+            background-color: #fff8dc;
+            border: 3px solid #545454;
+            border-radius: 15px;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 2px 2px 10px #888888;
+        }
+        input, select, button {
+            font-size: 18px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid #00aced;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+        #hasil {
+            font-size: 22px;
+            color: #228b22;
+            font-weight: bold;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <div class="container">
+        <img src="https://img.icons8.com/color/96/calculator.png" alt="Ikon Kalkulator" class="icon">
+        <br>
+        <label for="bilangan1">Masukkan Bilangan 1:</label><br>
+        <input type="number" name="bilangan1" id="bilangan1" placeholder="Contoh: 5"> 
+        <br>
+        <label for="bilangan2">Masukkan Bilangan 2:</label><br>
+        <input type="number" name="bilangan2" id="bilangan2" placeholder="Contoh: 3">
+        <br>
+        <label for="operasi">Pilih Operasi:</label><br>
+        <select name="operasi" id="operasi">
+            <option value="">- Pilih -</option>
+            <option value="tambah">Tambah (+)</option>
+            <option value="kurang">Kurang (-)</option>
+            <option value="bagi">Bagi (/)</option>
+            <option value="kali">Kali (*)</option>
+        </select>
+        <br>
+        <button onclick="Kalkulator()">Hitung</button>
+        <br><br>
+        <div id="hasil">Hasil akan muncul di sini!</div>
+    </div>
+
+    <script>
+        function Kalkulator() {
+            let bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            let bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            let operasi = document.getElementById("operasi").value;
+
+            if (isNaN(bilangan1) || isNaN(bilangan2)) {
+                alert("Harap masukkan bilangan yang valid!");
+                return;
+            }
+            
+            let hasil;
+            switch (operasi) {
+                case "tambah":
+                    hasil = bilangan1 + bilangan2;
+                    break;
+                case "kurang":
+                    hasil = bilangan1 - bilangan2;
+                    break;
+                case "bagi":
+                    hasil = bilangan2 !== 0 ? bilangan1 / bilangan2 : "Tidak bisa dibagi 0!";
+                    break;
+                case "kali":
+                    hasil = bilangan1 * bilangan2;
+                    break;
+                default:
+                    alert("Harap pilih operasi!");
+                    return;
+            }
+
+            document.getElementById("hasil").textContent = "Hasil: " + hasil;
+        }
+    </script>
+</body>
+</html>

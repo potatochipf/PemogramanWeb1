@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+    <script>
+        const mhsiswa1 = {
+            nama: "Rizky Khapidsyah",
+            nim: "L200180012",
+            prodi: {
+                kode: "SI",
+                nama: "Sistem Informasi"
+            },
+            ipk: 3.5,
+            kelulusan: function() {
+                if (this.ipk >= 3.0) {
+                    return "Lulus";
+                } else {
+                    return "Tidak Lulus";
+                }
+            }
+        };
+
+        function tampilkan() {
+            let area = document.getElementById("nf");
+            area.innerHTML = `
+                Nama Mahasiswa: ${mhsiswa1.nama} <br>
+                NIM: ${mhsiswa1.nim} <br>
+                Program Studi: ${mhsiswa1.prodi.nama} (${mhsiswa1.prodi.kode}) <br>
+                IPK: ${mhsiswa1.ipk} <br>
+                Status Kelulusan: ${mhsiswa1.kelulusan()}
+            `;
+        }
+    </script>
+</head>
+<body onload="tampilkan()">
+    <div id="nf">
+    </div>
+</body>
+</html>

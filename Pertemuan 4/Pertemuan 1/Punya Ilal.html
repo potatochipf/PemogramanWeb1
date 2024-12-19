@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <script src="https://kit.fontawesome.com/d688bac2f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+
+    <div style="width: 800px; margin: 0 auto; padding: 20px; border: 1px solid blue; border-radius: 5px; box-shadow: 0 0 10px rgb(76, 0, 255);">
+            <div style="margin-bottom: 15px; text-align: center;">
+        <button id="generateBtn" style="padding: 10px 20px; background-color: rgb(76, 0, 255); color: rgb(255, 255, 255); border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"><strong>Form Pemesanan Produk</strong></button> <br><br>   
+            </div>
+            <form action="after_pesan.html">
+        <div style="display: flex; justify-content: space-between;">
+        <div style="width: 40%; display: flex; flex-direction: column; align-items: center;">
+        <label for="uploadPicture" style="display: block; font-weight: bold; margin-bottom: 10px;">Upload Photo:</label>
+        <input type="file" id="uploadPhoto" name="uploadPhoto" accept="image/*" style="width: 60%; padding: 4px; border: 1px solid #141313; border-radius: 10px;">
+
+        <div id="imagePreview" style="width: 200px; height: 200px; border: 1px solid #000000; margin-top: 10px; background-color: #f7eaea; display: flex; justify-content: center; align-items: center; font-size: 14px; color: #999;">
+        <span>Tidak ada poto tersedia</span>
+            </div>
+            </div>
+            <div style="width: 45%; margin-left: 30px; display: flex; flex-direction: column; justify-content: centerr;">
+                <div style="margin-bottom: 15px;">
+                    <label for="title" style="display: block; font-weight: bold; margin-bottom: 5px;">Judul Produk:</label>
+                    <input type="text" id="Judul" name="Judul" style="width: calc(100% - 60px); padding: 8px; margin: 0; border: 1px solid #0e0b0b; border-radius: 10px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Deskripsi" style="display: block; font-weight: bold; margin-bottom: 5px;">Deskripsi Produk:</label>
+                    <input type="text" id="Deskripsi" name="Deskripsi" style="width: calc(100% - 105px); padding: 30px; margin: 0; border: 1px solid #140d0d; border-radius: 10px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="model" style="display: block; font-weight: bold; margin-bottom: 5px;">Model Produk:</label>
+                    <input type="text" id="model produk" name="model produk" value="" style="width: calc(100% - 60px); padding: 8px; margin: 0; border: 1px solid #070101; border-radius: 10px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Kondisi Produk" style="display: block; font-weight: bold; margin-bottom: 5px;">Kondisi Produk:</label>
+                    <input type="text" id="Kondisi Produk" name="Kondisi Produk" style="width: calc(100% - 60px); padding: 8px; margin: 0; border: 1px solid #080404; border-radius: 10px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="accountNumber" style="display: block; font-weight: bold; margin-bottom: 5px;">No Rekening:</label>
+                    <input type="text" id="NoRekening" name="NoRekening" style="width: calc(100% - 60px); padding: 8px; margin: 0; border: 1px solid #140a0a; border-radius: 10px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="bank" style="display: block; font-weight: bold; margin-bottom: 5px;">Bank:</label>
+                    <select id="bank" name="bank" style="width: 50%; padding: 8px; border: 1px solid #080505; border-radius: 10px;">
+                        <option value="HSBC" selected>BRI</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Mandiri">Mandiri</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Pemegang Akun" style="display: block; font-weight: bold; margin-bottom: 5px;">Pemegang Akun:</label>
+                    <input type="text" id="Pemegang Akun" name="Pemegang Akun" value="Tulis nama lo">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="transaksi" style="display: block; font-weight: bold; margin-bottom: 5px;">Transaksi Produk:</label>
+                    <input type="number" id="transaksi" name="transaksi" value="1" min="1" style="width: 60px; padding: 8px; margin: 0; border: 1px solid #030303; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="number" style="display: block; font-weight: bold; margin-bottom: 5px;">Kirim No Telepon:</label>
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="text" id="number" name="number" style="width: padding: 8px; margin: 0; border: 1px solid  #030303; border-radius: 10px;" >
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="emails" style="display: block; font-weight: bold; margin-bottom: 5px;">Kirim Email:</label>
+                        <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="emails" name="emails" style="width: padding: 8px; margin: 0; border: 1px solid #030303; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div style="margin-bottom: 15px; text-align: center;">
+
+<button id="generateBtn" type="submit" style="padding: 10px 20px; background-color: rgb(76, 0, 255); color: rgb(255, 255, 255); border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"><strong>Kirim</strong></button>        </div>
+    </div>
+
+    <script>
+        const uploadPhoto = document.getElementById('uploadPhoto');
+        const imagePreview = document.getElementById('imagePreview');
+
+        uploadPhoto.addEventListener('change', function() {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.addEventListener('load', function() {
+                    imagePreview.innerHTML = '<img src="' + this.result + '" alt="Image Preview" style="max-width: 100%; max-height: 100%;">';
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.innerHTML = '<span>No image uploaded</span>';
+            }
+        });
+    </script>
+    </form>
+
+</body>
+</html>

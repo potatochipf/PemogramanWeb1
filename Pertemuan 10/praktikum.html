@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pindah Halaman Berdasarkan Kondisi</title>
+    <script>
+        function cekHalaman() {
+            const nilai = prompt("Masukkan angka (1 atau 2):");
+            if (nilai === "1") {
+                window.location.href = "https://www.google.com";
+            } else if (nilai === "2") {
+                window.location.href = "https://www.bing.com";
+            } else {
+                alert("Angka yang dimasukkan tidak valid!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="cekHalaman()">Cek dan Pindah</button>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Tugas Pertemuan 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .flex-container .box {
+            background-color: #c9d1cb;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .flex-container .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .flex-container-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+            width: 100%;
+        }
+
+        .flex-container-bottom .box-gambar {
+            width: 200px;
+            height: 100px;
+            background-color: #c9d1cb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .flex-container-bottom .box-gambar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="box">
+            <img src="https://jkt48.com/profile/angelina_christy.jpg?v=20230116" alt="Foto 1">
+        </div>
+        <div class="box">
+            <img src="https://jkt48.com/profile/flora_shafiq.jpg?v=20230116" alt="Foto 2">
+        </div>
+        <div class="box">
+            <img src="https://jkt48.com/profile/freya_jayawardana.jpg?v=20230116" alt="Foto 3">
+        </div>
+    </div>
+
+    <div class="flex-container-bottom">
+        <div class="box-gambar">
+            <img src="https://jkt48.com/profile/callista_alifia.jpg?v=20230531" alt="Foto 4">
+        </div>
+        <div class="box-gambar">
+            <img src="https://jkt48.com/profile/greesella_adhalia.jpg?v=20231212" alt="Foto 5">
+        </div>
+        <div class="box-gambar">
+            <img src="https://jkt48.com/profile/gabriela_abigail.jpg?v=20230531" alt="Foto 6">
+        </div>
+        <div class="box-gambar">
+            <img src="https://jkt48.com/profile/marsha_lenathea.jpg?v=20230116" alt="Foto 7">
+        </div>
+        <div class="box-gambar">
+            <img src="https://jkt48.com/profile/lulu_salsabila.jpg?v=20230116" alt="Foto 8">
+        </div>
+    </div>
+</body>
+
+</html>

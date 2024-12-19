@@ -1,0 +1,23 @@
+header{
+    background-color: aqua;
+    margin: --10px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    align-items: center;
+}
+
+header li {
+    margin: 0 1.5rem;
+    font-weight: bold;
+}
+
+header li.logo {
+    margin-right: auto;
+}
+header img.logo {
+    width: 100px;
+}

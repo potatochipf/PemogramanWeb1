@@ -1,0 +1,46 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    
+}
+.nav{
+    width: 200px;
+    height: 100%;
+    background-color: pink;
+    
+}
+
+.conten{
+    width: 70%;
+}
+header{
+    background-color: bisque;
+    width: 100%;
+    height: 100px;
+}
+.konten{
+    width: 100%;
+    display: flex;
+}
+.konten .box1{
+    background-color: white;
+    width: 840px;
+    height: 300px;
+}
+.konten .box2{
+    background-color: aqua;
+    width: 200px;
+    height: 300px;
+}
+
+footer{
+    background-color: bisque;
+    width: 100%;
+    height: 100px;
+}
