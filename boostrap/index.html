@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="shortcut icon" href="img/hotel.png" type="image/x-icon" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&display=swap"
+    rel="stylesheet" />
+  <!-- Boostrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <title>Home</title>
+</head>
+
+<body id="hidden">
+  <!-- Spinner -->
+  <div id="spinner">
+    <div class="spinner-grow text-secondary" style="height: 5rem; width: 5rem;" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="m-5">
+    <h1 style="font-size: 4.5rem;">Potatochipf</h1>
+    <h2 id="subtitulo">Hotel Sejuta Umat</h2>
+  </header>
+
+  <!-- nav -->
+  <nav>
+    <ol class="container_nav text-dark">
+      <li>
+        <a href="./index.html" class="text-dark text-decoration-none">Beranda</a>
+      </li>
+      <li>
+        <a href="#imagenes" class="text-dark text-decoration-none">Kamar</a>
+      </li>
+      <li><a href="#formulario" class="text-dark text-decoration-none">Harga</a></li>
+      <li>
+        <a href="#footer" class="text-dark text-decoration-none">Kontak</a>
+      </li>
+    </ol>
+  </nav>
+  <!-- main -->
+  <main>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/apartemen (1).jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kamar Premium</h5>
+            <p>Kemewahan dengan harga terjangkau.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/apartemen (2).jpg" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kamar Deluxe</h5>
+            <p>Cocok untuk keluarga Anda.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/apartemen (3).jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kamar Standar</h5>
+            <p>Nyaman dan efisien.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Hubungi Kami
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Form Pemesanan
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Nama</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">nama lu bre</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">isi yang bener</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">No Telepon</label>
+                      <input type="tel" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Oke mantap !</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Kembali
+                  </button>
+                  <button type="submit" class="btn btn-primary">Kirim</button>
+                  </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- images -->
+    <section id="imagenes" class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/hotel (3).jpg" class="card-img-top" alt="Kamar 1">
+            <div class="card-body">
+              <h5 class="card-title">Kamar Standar</h5>
+              <p class="card-text">Nyaman dengan fasilitas lengkap untuk istirahat Anda.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/hotel (2).jpg" class="card-img-top" alt="Kamar 2">
+            <div class="card-body">
+              <h5 class="card-title">Kamar Deluxe</h5>
+              <p class="card-text">Luas dan modern, cocok untuk keluarga.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/hotel (1).jpg" class="card-img-top" alt="Kamar 3">
+            <div class="card-body">
+              <h5 class="card-title">Kamar Premium</h5>
+              <p class="card-text">Kemewahan tiada tanding untuk pengalaman terbaik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+      <div class="d-flex justify-content-center align-items-center flex-column container-reservas">
+        <h1>
+          MEMBUAT RESERVASI ANDA
+        </h1>
+        <h2 class="sub-card">Nikmati masa tinggal Anda dengan penuh gaya</h2>
+        <a href="reservas.html" class="btn btn-primary btn-lg"> PESAN KAMAR</a>
+      </div>
+    </section>
+  </main>
+  <!-- Table -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Promosi Kami</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Jenis Promosi</th>
+            <th scope="col">Deskripsi</th>
+            <th scope="col">Masa Berlaku</th>
+            <th scope="col">Harga Diskon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Paket Liburan Akhir Tahun</td>
+            <td>Diskon hingga 30% untuk menginap lebih dari 3 malam.</td>
+            <td>1 Desember - 31 Desember 2024</td>
+            <td>Rp 450.000/malam</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Paket Keluarga</td>
+            <td>Gratis sarapan untuk 4 orang dan akses kolam renang.</td>
+            <td>1 Januari - 28 Februari 2025</td>
+            <td>Rp 550.000/malam</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Promo Honeymoon</td>
+            <td>Diskon 25% untuk kamar deluxe dan layanan spa gratis.</td>
+            <td>1 Februari - 14 Februari 2025</td>
+            <td>Rp 700.000/malam</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>  
+  <!-- footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-whatsapp"></a></i> WhatsApp</li>
+            <li><i class="bi bi-envelope"></i> ihlalkuliah@gmail.com</li>
+            <li><i class="bi bi-instagram"></i> Potatochipf</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Cabang Kami</h5>
+          <ul class="list-unstyled">
+            <li>Bandung</li>
+            <li>Bogor</li>
+            <li>Jakarta</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center pt-3">
+        <span>©Muhamad Ihlal - 2024</span>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Script -->
+  <script src="js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</body>
+
+</html>
